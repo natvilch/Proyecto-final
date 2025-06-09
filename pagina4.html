@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Masitta Market</title>
+    <link rel="stylesheet" href="estilo.css">
+    <script src="Botones.js"></script>
+</head>
+<body>
+    <header>
+        <nav id="menu-principal">
+            <ul>
+                <li><a href="index.html"><img src="index.png" alt="Inicio" class="icono-menu">Inicio</a></li>
+                <li><a href="pagina1.html"><img src="categoria.png" alt="Productos" class="icono-menu">Productos</a></li>
+                <li><a href="pagina2.html"><img src="sucursales.webp" alt="" id="Sucursales">Sucursales</a></li>
+                <li><a href="pagina3.html"><img src="Receta.png" alt="" id="Receta">Receta de la semana</a></li>
+                <li><a href="pagina4.html"><img src="Entrega.png" alt="Entrega" class="icono-menu">Entrega</a></li>
+                <li><a href="pagina5.html"><img src="Compras.jpg" alt="Compras" class="icono-menu">Juego</a></li> 
+            </ul>
+        </nav>
+    </header>
+
+    <h1>Formulario de entrega </h1>
+    <form class="formularioentregas">
+        <label for="d1">Ingresa tu dirección completa</label> 
+        <input type="text" id="d1" placeholder="Ej: Av.16 de Julio # 123, Sopocachi" required>
+        
+        <div class="cajita">
+            <label for="descripcion-lugar">Descripción del lugar</label>
+            <input type="radio" id="radioCasa" name="tipo_lugar"> <label for="radioCasa">Casa</label>
+            <input type="radio" id="radioEdificio" name="tipo_lugar"> <label for="radioEdificio">Edificio</label>
+            <input type="radio" id="radioOficina" name="tipo_lugar"> <label for="radioOficina">Oficina</label>
+        </div>
+
+        <label for="n1">Número de celular</label> 
+        <input type="number" required id="n1"> <br> 
+        
+        <label for="instrucciones-adicionales">Instrucciones adicionales</label>
+        <textarea id="instrucciones-adicionales"></textarea>
+        
+        <button type="button" onclick="boton()">Enviar</button>
+    </form>
+
+    <footer class="footer">
+        <p>&copy; 2025 Realizado por: Ivanova Villarpando</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,916 @@
+/* Index */
+
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+}
+header {
+    background-color: #f7ba20a2;
+    color: black;
+    padding-left: 0;
+    padding-right: 0;
+    width: 100%;
+    margin-bottom: 20px;
+}
+nav#menu-principal {
+    background-color: #ffffff;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+nav#menu-principal img{
+    border-radius: 0px;
+    transition: transform 0.3s;
+    height: auto;
+    width: auto;
+}
+nav#menu-principal ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: #ffffff ;
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 80px;
+}
+nav#menu-principal li {
+    margin: 0;
+}
+nav#menu-principal li:first-child {
+    margin-right: 30px;
+    padding-left: 10px;
+}
+
+.icono-menu{
+    height: 20px;
+    width: auto;
+    vertical-align: middle;
+    margin-right: 8px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+nav#menu-principal li:not(:first-child) img {
+    height: 20px;
+    width: auto;
+    vertical-align: middle;
+    margin-right: 5px;
+    margin-left: 20px;
+    border-radius: 5px;
+}
+nav#menu-principal a {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: black;
+    border-radius: 12px; 
+    transition: all 0.3s;
+}
+nav#menu-principal a img {
+    height: 20px;
+    width: auto;
+    margin-right: 8px; 
+    vertical-align: middle;
+    align-items: center;
+}
+nav#menu-principal a:hover {
+    background-color: rgba(114, 114, 114, 0.616);
+    font-weight: bold;
+    color: #ffffff;
+    cursor: pointer;
+}
+main {
+    padding: 50px;
+    max-width: 1200px;
+    margin: 50px;
+    background-color: #44bdbdc2;
+    border-radius: 5px;
+    flex: 1;
+    text-align: center;
+}
+
+h1{
+    text-align: center;
+    font-size: 35px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    letter-spacing: 6px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.categorias{
+    padding: 60px 20px;
+    text-align: center;
+}
+.galeria{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    max-width: 1200px;
+    margin:0 auto;
+}
+.item {
+    border-radius: 15px; 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); 
+    padding: 20px; 
+    width: 180px;
+    text-align: center; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: space-between; 
+    align-items: center; 
+    background-color: white;
+}
+.item:hover {
+    transform: translateY(-8px); 
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}   
+.item img {
+    width: 120px; 
+    height: 120px; 
+    border-radius: 5%; 
+    object-fit: cover; 
+    margin-bottom: 15px; 
+}
+
+.contenedor {
+    display: flex;
+    gap: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+    border-radius: 10px;
+    overflow: auto ;
+    float: none;
+}
+.caja-izquierda {
+    flex: 2;              
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+}
+.caja-izquierda img{
+    height: auto;
+    width: 100%;
+    margin-bottom: 15px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.caja-derecha {
+    flex: 1;               
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.caja-interna {
+    background: rgba(138, 205, 214, 0.582);
+    color: rgb(0, 0, 0);
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 8px;
+    margin-top: 15px;
+    text-align: center;
+}
+
+.caja-interna button {
+    background: white;
+    color: #333;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+.caja-interna button:hover {
+    background: #F7B920;
+    transform: scale(1);
+}
+.caja-interna img{
+    border-radius: 20px;
+    object-fit: cover;
+    height: 250px;
+    width: 250px;
+    margin-top: 15px;
+    display: block;
+    align-items: center;
+}
+
+
+
+/* Pagina 1 */
+
+
+
+#Carnes {
+    max-width: 1200px;
+    margin: 50px;
+    padding: 50px;
+    background-color: #d86a10b9;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+ 
+#Carnes h2 {
+    color: white;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2rem;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+.Carne {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 35px;
+}
+.Carne > div {
+    background-color: white;
+    border-radius: 12px;
+    padding: 5px;
+    width: 250px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.Carne > div:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.Carne img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    border: 3px solid #f0f0f0;
+} 
+.Carne h4 {
+    margin: 0 0 10px 0;
+    color: #333;
+    font-size: 1.3rem;
+    text-align: center;
+}     
+.Carne p {
+    margin: 5px 0;
+    color: #666;
+    font-size: 0.9rem;
+    text-align: center;
+}
+        
+.Carne h3 {
+    margin: 15px 0 0 0;
+    color: #AF3E4D;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+#Frutasyverduras {
+    max-width: 1200px;
+    margin: 50px;
+    padding: 50px;
+    background-color: rgba(121, 161, 40, 0.596);
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+ 
+#Frutasyverduras h2 {
+    color: white;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2rem;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.Frutayverdura {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 35px;
+}
+.Frutayverdura > div {
+    background-color: white;
+    border-radius: 12px;
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.Frutayverdura> div:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.Frutayverdura img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    border: 3px solid #f0f0f0;
+} 
+.Frutayverdura h4 {
+    margin: 0 0 10px 0;
+    color: #333;
+    font-size: 1.3rem;
+    text-align: center;
+}
+        
+.Frutayverdura p {
+    margin: 5px 0;
+    color: #666;
+    font-size: 0.9rem;
+    text-align: center;
+}
+        
+.Frutayverdura h3 {
+    margin: 15px 0 0 0;
+    color: #0c6e08;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+}
+#Panadería {
+    max-width: 1200px;
+    margin: 50px;
+    padding: 50px;
+    background-color: rgba(117, 98, 28, 0.61);
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#Panadería h2 {
+    color: white;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2rem;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+.Panaderiaypasteleria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 35px;
+}
+.Panaderiaypasteleria > div {
+    background-color: white;
+    border-radius: 12px;
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.Panaderiaypasteleria> div:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.Panaderiaypasteleria img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    border: 3px solid #f0f0f0;
+} 
+.Panaderiaypasteleria h4 {
+    margin: 0 0 10px 0;
+    color: #333;
+    font-size: 1.3rem;
+    text-align: center;
+}
+        
+.Panaderiaypasteleria p {
+    margin: 5px 0;
+    color: #666;
+    font-size: 0.9rem;
+    text-align: center;
+}
+        
+.Panaderiaypasteleria h3 {
+    margin: 15px 0 0 0;
+    color: rgb(80, 76, 65);
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+#Bebidas {
+    max-width: 1200px;
+    margin: 50px;
+    padding: 50px;
+    background-color: rgba(89, 178, 201, 0.61);
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+ 
+#Bebidas h2 {
+    color: white;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2rem;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.Bebida {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 35px;
+}
+.Bebida > div {
+    background-color: white;
+    border-radius: 12px;
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.Bebida> div:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.Bebida img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    border: 3px solid #f0f0f0;
+} 
+.Bebida h4 {
+    margin: 0 0 10px 0;
+    color: #333;
+    font-size: 1.3rem;
+    text-align: center;
+}
+        
+.Bebida p {
+    margin: 5px 0;
+    color: #666;
+    font-size: 0.9rem;
+    text-align: center;
+}
+        
+.Bebida h3 {
+    margin: 15px 0 0 0;
+    color: rgb(41, 108, 124);
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+#Snacks {
+    max-width: 1200px;
+    margin: 50px;
+    padding: 50px;
+    background-color: rgba(127, 102, 194, 0.61);
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+ 
+#Snacks h2 {
+    color: white;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2rem;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.Dulces {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 35px;
+}
+.Dulces > div {
+    background-color: white;
+    border-radius: 12px;
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.Dulces> div:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.Dulces img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    border: 3px solid #f0f0f0;
+} 
+.Dulces h4 {
+    margin: 0 0 10px 0;
+    color: #333;
+    font-size: 1.3rem;
+    text-align: center;
+}
+        
+.Dulces p {
+    margin: 5px 0;
+    color: #666;
+    font-size: 0.9rem;
+    text-align: center;
+}
+        
+.Dulces h3 {
+    margin: 15px 0 0 0;
+    color: rgb(80, 41, 124);
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+
+/* Pagina 2 */
+
+
+#Tablapagina2 { 
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 1200px;
+    margin: 20px auto; 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15); 
+    background-color: #ffffff; 
+    border-radius: 8px; 
+    overflow: hidden;
+}
+#Tablapagina2 thead { 
+    background-color: white;
+    color: black;
+    border-bottom: 2px solid #000000;
+}
+#Tablapagina2 th, #Tablapagina2 td { 
+    padding: 15px 20px;
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+    color: #333;
+}
+
+
+/* Pagina 3 */
+
+
+#Receta1{
+    max-width: 1200px;
+    margin: 50px;
+    padding: 50px;
+    background-color: rgba(255, 255, 255, 0.897);
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#Receta1 img{
+    height: 500px;
+    width: 100%;
+    margin-bottom: 15px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+#Receta1 h2{
+    font-size: 1.8rem;
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+#Receta1 h3{
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+#Receta1 ul {
+    list-style-type: square;
+    padding-left: 25px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 100%;
+    max-width: 90%;
+}
+
+#Receta1 ol {
+    list-style-type: decimal;
+    padding-left: 25px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 100%;
+    max-width: 90%;
+}
+#Receta1 ul li, 
+#Receta1 ol li {
+    margin: 10px 0; 
+    color: #333;
+    font-size: 1.1rem;
+    font-weight: normal;
+    line-height: 1.5;
+    text-align: left;
+}
+
+#Tablapagina3 { 
+    border-collapse: collapse;
+    max-width: 1200px;
+    margin: 50px;
+    padding: 50px;
+    margin: 20px auto; 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15); 
+    background-color: #ffffff; 
+    border: 1px dotted;
+    overflow: hidden;
+    text-align: center;
+}
+#Tablapagina3 thead{ 
+    background-color: white;
+    color: black;
+    border-bottom: 1px dotted
+}
+#Tablapagina3 th{ 
+    padding: 15px 20px;
+    text-align: center;
+    letter-spacing: 0.5px;
+}
+#Tablapagina3 tbody td{ 
+    padding: 15px 20px;
+    border-bottom: 1px dotted;
+    color: #555;
+}
+
+
+/* Página 4 */
+
+.formularioentregas {
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.formularioentregas label {
+    font-weight: bold;
+    color: #333;
+    font-size: 0.95em;
+    margin-bottom: 5px;
+    display: block;
+}
+.formularioentregas input[type="text"],
+.formularioentregas input[type="tel"],
+.formularioentregas textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    box-sizing: border-box;
+}
+.cajita {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px 0;
+}
+.formularioentregas button {
+    background: rgba(255, 255, 255, 0.534);
+    color: #333;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+.formularioentregas button:hover {
+    background: #267979b6;
+    color:white;
+    transform: scale(1);
+}
+
+
+/*pagina 5 */
+
+.juego{
+    padding: 60px 20px;
+}
+.juego1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    max-width: 1200px;
+    margin:0 auto;
+}
+.juego-item{
+    border-radius: 15px; 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); 
+    padding: 20px; 
+    width: 180px;
+    text-align: center; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: space-between; 
+    align-items: center; 
+    background-color: white;
+    }
+.juego-item:hover {
+    transform: translateY(-8px); 
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}   
+.juego-item img {
+    width: 100%;
+    height: 100%; 
+    display: block;
+    object-fit: cover;
+    margin: 0;
+    padding: 0; 
+    border-radius: 15px;
+}
+.juegoform {
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.juegoform label {
+    font-weight: bold;
+    color: #333;
+    font-size: 0.95em;
+    margin-bottom: 5px;
+    display: block;
+}
+.juegoform  button {
+    background: rgba(255, 255, 255, 0.534);
+    color: #333;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+.juegoform  button:hover {
+    background: #352679b6;
+    color:white;
+    transform: scale(1);
+}
+
+footer {
+    background-color:#f7ba20a8;
+    color: black;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 20px;
+    font-size: 0.9em;
+}
+
+@media (max-width: 768px) {
+    nav#menu-principal ul {
+        flex-wrap: wrap;
+        height: auto;
+        padding: 10px 0;
+    }
+    nav#menu-principal li {
+        margin: 5px 0;
+    }
+    .contenedor {
+        flex-direction: column;
+        width: 90%;
+        height: auto;
+    }
+    .caja-izquierda, .caja-derecha {
+        flex: 1 1 100%;
+    }
+    .caja-interna img{
+        width: 95%; 
+        margin-top: 10px; 
+        margin-bottom: 10px;
+        border-radius: 5px;
+    }
+    .Carne {
+        flex-direction: column;
+        align-items: center;
+    }   
+    .Carne > div {
+        width: 80%;
+        max-width: 300px;
+    }
+    .Frutayverdura {
+        flex-direction: column;
+        align-items: center;
+    }      
+    .Frutayverdura > div {
+        width: 80%;
+        max-width: 300px;
+    }
+    .Panaderiaypasteleria  {
+        flex-direction: column;
+        align-items: center;
+    }   
+    .Panaderiaypasteleria  > div {
+        width: 80%;
+        max-width: 300px;
+    }
+    .Bebida {
+        flex-direction: column;
+        align-items: center;
+    }      
+    .Bebida > div {
+        width: 80%;
+        max-width: 300px;
+    }
+    .Dulces {
+        flex-direction: column;
+        align-items: center;
+    }      
+    .Dulces > div {
+        width: 80%;
+        max-width: 300px;
+    }
+    #Tablapagina2 {
+        border: none;
+    }
+
+    #Tablapagina2 thead {
+        display: none;
+    }
+    #Tablapagina2 tr {
+        display: block;
+        margin-bottom: 20px;
+        background-color: #fff;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        padding: 10px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+    #Tablapagina2 td {
+        display: block;
+        text-align: left;
+        font-size: 14px;
+        padding: 10px 10px 10px 110px;
+        position: relative;
+        border: none;
+        border-bottom: 1px solid #eee;
+    }
+    #Tablapagina2 td::before {
+        content: attr(data-label);
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        width: 90px;
+        padding-right: 10px;
+        font-weight: bold;
+        color: #000;
+        white-space: nowrap;
+    }
+    #Tablapagina3 {
+        width: 80%;
+        margin: 10px auto;
+        padding: 10px;
+    }
+    #Tablapagina3 th,
+    #Tablapagina3 tbody td {
+        font-size: 0.8em; 
+        padding: 8px 10px; 
+    } 
+}
